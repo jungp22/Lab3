@@ -34,7 +34,7 @@ Description : Learning CSS.
         .inline-demo {
             /*Change the display to see all elements of this type in a line.*/
             margin: 15px;
-            display:inline;
+            display:inline-block;
         }
 
         .block-demo {
@@ -53,8 +53,7 @@ Description : Learning CSS.
             Add CSS that I stick the first child to the left side of the screen.
             */
             color: red;
-            float:left;
-            
+            float:left
         }
 
         .block-demo > .inline-demo:nth-child(2) {            
@@ -72,7 +71,8 @@ Description : Learning CSS.
         .image-demo {
             /* Modify the .image-demo class to adjust the image's width to 50% of the screen. */
             width: 50%;
-            border: 2px dotted green;
+            border: 2px solid black;
+        
         }
 
         .hover-demo:hover {
@@ -103,8 +103,8 @@ Description : Learning CSS.
     </div>    
 
     <h2>CSS Image Styling with Inline CSS</h2>
-    <!-- Add a dotted green border of 3px inline. Which style will win the competition? -->
-    <img class="image-demo" style="" src="images/example.svg" alt="Demo Image">
+        <!-- Add a dotted green border of 3px inline. Which style will win the competition? -->
+    <img class="image-demo" style="color: green; border: 3px; border-style: dotted" src="images/example.svg" alt="Demo Image">
 
     <h2>CSS Hover Effects</h2>
     <div class="hover-demo"><span>Hover over me! My color will change to blue!</span></div>
